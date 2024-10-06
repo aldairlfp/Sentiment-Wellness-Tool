@@ -112,17 +112,45 @@ Sociales, Extracción de Características, KMeans, Redes Neuronales.
 
 \tableofcontents
 
+\section{Estado del Arte}
+
 \section{Introducción}
 
-\subsection{Modelacion del problema}
+En la última década, el uso de redes sociales ha crecido exponencialmente, convirtiéndose en una plataforma fundamental 
+para la expresión personal y la interacción social. Este fenómeno ha generado un vasto volumen de datos que pueden ser analizados 
+para obtener información valiosa sobre diversos aspectos de la vida cotidiana, incluida la salud mental. La clasificación de enfermedades 
+de salud mental a partir de comentarios en redes sociales representa un desafío significativo, dado que los datos son inherentemente ruidosos y subjetivos.
 
-lipsum
+El presente trabajo se centra en la aplicación de técnicas de aprendizaje automático para abordar este problema. 
+A diferencia de estudios previos que han predominado en el uso de enfoques de aprendizaje supervisado, como Máquinas de Vectores de Soporte (SVM), 
+Árboles de Decisión y Naive Bayes, nuestro enfoque inicial se basa en el aprendizaje no supervisado. Esta elección se fundamenta en la escasez de investigaciones 
+que exploren esta metodología en el contexto específico del análisis de comentarios en redes sociales relacionados con la salud mental. Al emplear técnicas no supervisadas, 
+buscamos evaluar su eficacia para identificar patrones y agrupaciones en los datos sin la necesidad de etiquetas predefinidas.
 
-\subsection{Solución 1: Utilizando el algoritmo de Dijkstra}
+Posteriormente, complementamos nuestro análisis con un enfoque supervisado utilizando redes neuronales. A pesar de su creciente popularidad en el campo del aprendizaje automático, 
+encontramos que su aplicación específica a la clasificación de enfermedades mentales a partir de datos extraídos de redes sociales es limitada en la literatura existente. 
+ 
+A través de este trabajo, esperamos proporcionar una visión integral sobre cómo algunas de las herramientas de aprendizaje automático pueden ser utilizadas para abordar problemas complejos en el ámbito de la salud mental, abriendo nuevas vías para futuras investigaciones y aplicaciones prácticas.
+
+\section{Desarrollo}
+
+\subsection{Datos y Procesamiento}
+
+Los datos utilizados en este estudio provienen de un conjunto de datos disponible en línea, el cual está catalogado en siete clases diferentes: 
+Ansiedad, Depresión, Normal, Suicida, Estrés, Bipolar y Desorden de la Personalidad. Cada entrada del conjunto de datos está estructurada en dos columnas: 
+una que contiene el texto y otra que proporciona la etiqueta correspondiente que describe la patología asociada al texto.
+
+El primer paso en nuestro proceso de análisis fue la limpieza de los datos. Esto incluyó la eliminación de valores NaN (Not a Number) para asegurar la integridad del conjunto de datos. 
+
+Una vez limpiados los datos, utilizamos \textbf{Empath}, que es una herramienta diseñada para caracterizar y cuantificar aspectos psicológicos del texto. 
+Esta nos permitió extraer características relevantes que reflejan el contenido emocional y psicológico de los comentarios, facilitando así un análisis más profundo.
+
+Posteriormente, aplicamos una matriz de correlación para identificar y eliminar datos redundantes dentro de nuestro conjunto. 
+Esta técnica es esencial para reducir la dimensionalidad del dataset y mejorar la eficiencia del modelo, al eliminar características que no aportan información adicional o que están altamente correlacionadas con otras. 
+Al final de este proceso, obtuvimos un conjunto de datos más limpio y representativo, listo para ser utilizado en nuestros modelos de aprendizaje automático.
 
 
-
-\textbf{Análisis de Correctitud}
+\subsection{Desarrollo}
 
 
 
