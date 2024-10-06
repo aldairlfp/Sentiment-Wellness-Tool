@@ -150,7 +150,19 @@ Esta técnica es esencial para reducir la dimensionalidad del dataset y mejorar 
 Al final de este proceso, obtuvimos un conjunto de datos más limpio y representativo, listo para ser utilizado en nuestros modelos de aprendizaje automático.
 
 
-\subsection{Desarrollo}
+\subsection{Enfoque No Supervisado Utilizando KMeans}
+
+Para abordar la clasificación de enfermedades de salud mental, como primer enfoque utilizando el algoritmo KMeans. Este algoritmo es ampliamente reconocido por su capacidad para agrupar datos en clústeres basados en similitudes, 
+y en nuestro caso, se le indicó que clusterizara los datos en siete clases, alineándose con las categorías del conjunto de datos original.
+
+Sin embargo, los resultados obtenidos no fueron satisfactorios. Al analizar la distribución de los clústeres generados, observamos que una de las clases contenía únicamente dos elementos, mientras que otra clase agrupaba 99 elementos. 
+Dada la naturaleza del conjunto de datos, que cuenta con miles de entradas por clase, esta distribución indica un desempeño deficiente del modelo.
+
+La presencia de un clúster con tan pocos elementos sugiere que el algoritmo no pudo identificar patrones significativos dentro de los datos para esa clase específica. Asimismo, la clase con 99 elementos podría estar representando una agrupación inadecuada,
+lo que implica que el modelo no logró capturar la complejidad del conjunto de datos.
+
+En conclusión, estos resultados nos llevan a la reflexión sobre la idoneidad del enfoque no supervisado en este contexto particular. A pesar de las expectativas iniciales, los resultados obtenidos no cumplen con los estándares necesarios para 
+una clasificación efectiva y nos motivan a explorar enfoques alternativos.
 
 
 
