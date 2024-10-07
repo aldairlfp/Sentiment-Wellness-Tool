@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}{Estado del Arte}}{2}{section.1}%
+\contentsline {section}{\numberline {2}{Introducción}}{2}{section.2}%
+\contentsline {section}{\numberline {3}{Desarrollo}}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}{Datos y Procesamiento}}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}{Enfoque No Supervisado Utilizando KMeans}}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}{Enfoque supervisado}}{4}{subsection.3.3}%
+\contentsline {section}{\numberline {4}{Conclusiones}}{5}{section.4}%
+\contentsline {section}{\numberline {5}{Anexos}}{5}{section.5}%
