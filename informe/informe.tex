@@ -115,6 +115,36 @@ Sociales, Extracción de Características, KMeans, Redes Neuronales.
 
 \section{Estado del Arte}
 
+1. \textbf{Sentiment Analysis of Mental Health Using K-Nearest Neighbors on Social Media Twitter (2022)} \\
+   \textbf{Modelos}: KNNs, SVM y Árboles de Decisión. \\
+   \textbf{Método}: Procesamiento de datos utilizando KNNs, comparando el algoritmo de clasificación de Máquinas de Soporte Vectorial y el procesamiento de datos de Árboles de Decisión utilizando herramientas de "RapidMiner". \\
+   \textbf{Resultados}: Separando la data en un ratio de 70:30 y usando k=5, la eficacia fue de 58.39\%. \\
+   \textbf{Dataset}: Revisiones de la comunidad con el keyword "Mental Health".
+
+2. \textbf{Depression Detection from Social Network Data Using Machine Learning Techniques (2018)} \\
+   \textbf{Modelos}: SVM, Árboles de Decisión, Clasificadores por Conjuntos y KNNs. \\
+   \textbf{Método}: Análisis de depresión usando cuatro modelos sobre un conjunto de atributos como el "proceso emocional", el "proceso temporal" y el "estilo lingüístico". \\
+   \textbf{Resultados}: Decision Trees y SVM tienen una eficacia entre el 70\% y 73\%; KNNs y Ensemble Classifiers tienen una eficacia entre el 60\% y 64\%. \\
+   \textbf{Dataset}: Comentarios de usuarios en Facebook.
+
+3. \textbf{Depression Detection by Analyzing Social Media Posts of Users (2019)} \\
+   \textbf{Modelos}: SVM y Naive Bayes. \\
+   \textbf{Método}: Clasificación de oraciones tokenizadas con Naive Bayes. \\
+   \textbf{Resultados}: Eficacia del 74\%. \\
+   \textbf{Dataset}: Utilización de un diccionario de sentimientos y colección de tweets obtenidos con "BeautifulSoup".
+
+4. \textbf{MM-EMOG: Multi-Label Emotion Graph Representation for Mental Health Classification on Social Media (2024)} \\
+   \textbf{Modelos}: TextGCN, MM-EMOG (TextGCN adaptado); comparado con BERT, RoBERTa, MentalBERT y MentalRoBERTa. \\
+   \textbf{Método}: Uso de Redes Neuronales de Convolución Gráfica para representación emocional multietiqueta. \\
+   \textbf{Resultados}: Eficacia entre 67.5\% y 71.9\% en TwitSuicide; entre 70.3\% y 73\% en CSSRS; entre 76\% y 78\% en Depression. \\
+   \textbf{Dataset}: TwitSuicide, CSSRS.
+
+5. \textbf{Towards Interpretable Mental Health Analysis with Large Language Models (2023)} \\
+   \textbf{Modelos}: Múltiples LLMs como LLaMa, InstructGPT-3 y ChatGPT; comparado con BERT, RoBERTa, MentalBERT, MentalRoBERTa, CNN, GRU, BiLSTM\_Att y fastText. \\
+   \textbf{Método}: Empleo de LLMs para el análisis emocional mediante estrategias de prompting. \\
+   \textbf{Resultados}: En Zero-shot, ChatGPT supera a LLaMa e InstructGPT-3 en todos los datasets; en el dataset DR consigue un recall del 82.8\% y un F1-score del 82.4\%. En Emotion-enhanced CoT, ChatGPT logra un recall del 85.7\% y un F1-score del 84.2\% en el dataset DR; en el resto de datasets supera su performance respectivo en Zero-shot. \\
+   \textbf{Dataset}: Dreaddit, Depression\_Reddit, CLPsych15, T-SID, SAD y CAMS.
+   
 \section{Introducción}
 
 En la última década, el uso de redes sociales ha crecido exponencialmente, convirtiéndose en una plataforma fundamental 
